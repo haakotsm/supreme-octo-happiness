@@ -5,11 +5,16 @@ export const handlers = [
   http.get("/api/weather", ({ request }) => {
     const url = new URL(request.url);
     const location = url.searchParams.get("location");
-    if (!location) {
+    const date = url.searchParams.get("date");
+    const hasNoQueryParams = !location && !date;
+    if (hasNoQueryParams) {
       return HttpResponse.json(weatherData);
     }
     return HttpResponse.json({
-      ...weatherData.filter((w) => w.location === location),
+      ...(location
+        ? weatherData.filter((w) => w.location === location)
+        : weatherData
+      ).filter((w) => !date || w.date === date),
     });
   }),
 ];
