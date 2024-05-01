@@ -1,6 +1,6 @@
 import { render } from "@testing-library/react";
 import { axe } from 'jest-axe';
-import App from "../src/App";
+import App from "../src/pages/App";
 
 describe('App', () => {
     it('should render', async () => {

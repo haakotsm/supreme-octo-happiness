@@ -1,6 +1,6 @@
+import { WeatherData } from '@mocks/data'
+import '@styles/App.css'
 import { useState } from 'react'
-import { WeatherData } from '../mocks/data'
-import './App.css'
 
 function App() {
   const [weatherData, setWeatherData] = useState<WeatherData>()

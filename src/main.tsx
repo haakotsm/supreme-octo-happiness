@@ -1,8 +1,8 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import { worker } from '../mocks/worker.ts'
-import App from './App.tsx'
-import './index.css'
+import { worker } from '@mocks/worker.ts';
+import App from '@pages/App.tsx';
+import '@styles/index.css';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 
 await worker.start();
 
