@@ -3,7 +3,6 @@ import { WeatherData } from "@mocks/data";
 export function parseWeatherData(
   data: Record<string, WeatherData>
 ): WeatherData[] {
-  console.log(data);
   const result: WeatherData[] = [];
   Object.values(data).forEach((item) => {
     result.push({
