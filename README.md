@@ -41,6 +41,79 @@ To get started with the application, follow these steps:
   - [ ] Function to convert temperature between Celsius and Fahrenheit.
   - [ ] Optional: Function to calculate real-feel temperature based on wind speed and humidity.
 
-## Contributing
+# Integrating AI Coding Assistants in IntelliJ IDEA and Visual Studio Code
 
-Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
+Enhance your development process with AI-powered code suggestions by integrating tools like Codeium and GitHub Copilot into your IDE.
+
+## IntelliJ IDEA Integration
+
+### GitHub Copilot
+
+1. Install the Plugin:
+
+   - Open IntelliJ IDEA.
+   - Navigate to File > Settings > Plugins.
+   - Search for "GitHub Copilot" in the Marketplace.
+   - Click "Install" and restart IntelliJ IDEA to activate the plugin.
+
+2. Authenticate GitHub Account:
+
+   - After installation, you will be prompted to sign in to your GitHub account.
+   - Follow the authentication steps to link your GitHub account which has access to GitHub Copilot.
+
+3. Using GitHub Copilot:
+   - GitHub Copilot works automatically as you type, suggesting code and completions in the editor.
+     Use Alt + Enter (or Option + Enter on macOS) to accept suggestions.
+
+### Codeium
+
+1. Install the Plugin:
+
+   - Open IntelliJ IDEA.
+   - Navigate to File > Settings > Plugins.
+   - Click on the "Marketplace" tab and search for "Codeium".
+   - Find the "Codeium AI Autocomplete and Chat for Python, JS, Java, Go" plugin and click "Install".
+   - Restart IntelliJ IDEA to activate the plugin.
+
+2. Using Codeium:
+
+   - Once installed, Codeium will automatically provide AI-driven code completions as you type.
+   - Codeium may also provide additional features such as refactoring suggestions and code explanations.
+
+3. Configure Plugin Settings:
+   - To adjust how Codeium behaves, go to File > Settings > Tools > Codeium and configure the settings to fit your coding style and needs.
+
+## Visual Studio Code Integration
+
+### GitHub Copilot
+
+1. Install the Extension:
+
+   - Open Visual Studio Code.
+   - Go to the Extensions view by clicking on the square icon on the sidebar or pressing Ctrl+Shift+X.
+   - Search for "GitHub Copilot" and click "Install".
+
+2. Authenticate GitHub Account:
+
+   - Once installed, you’ll need to authenticate with GitHub.
+   - Follow the on-screen prompts to sign in to your GitHub account which is subscribed to Copilot.
+
+3. Using GitHub Copilot:
+   - Copilot will automatically start offering suggestions as you type in the editor.
+   - Press Tab to accept a suggestion.
+
+### Codeium
+
+1. Install the Extension:
+
+   - Open Visual Studio Code.
+   - Navigate to the Extensions view (Ctrl+Shift+X).
+   - Search for "Codeium" and click "Install".
+
+2. Using Codeium:
+
+   - Once installed, Codeium provides AI-driven code completions as you type.
+   - No separate authentication is needed unless specified by Codeium during setup.
+
+3. Configure Settings:
+   - You can configure Codeium settings by going to the extension settings in VS Code to adjust its behavior according to your preferences.
