@@ -11,7 +11,9 @@
     "test": "vitest"
   },
   "dependencies": {
+    "@testing-library/user-event": "^14.5.2",
     "@vitejs/plugin-react-swc": "^3.6.0",
+    "date-fns": "^3.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -36,7 +38,8 @@
     "typescript": "^5.2.2",
     "unplugin-auto-import": "^0.17.5",
     "vite": "^5.2.0",
-    "vitest": "^1.5.1"
+    "vitest": "^1.5.1",
+    "vitest-matchmedia-mock": "^1.0.5"
   },
   "packageManager": "npm@10.5.2+sha256.df0a1f7691654b94786013e5d5b80a873a7ffbae9c82c3bec8b5db76bc3b7dfd",
   "engines": {

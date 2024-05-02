@@ -25,9 +25,8 @@ This is a simple React application that displays weather information for a user-
   - Function to convert temperature between Celsius and Fahrenheit.
   - Optional: Function to calculate real-feel temperature based on wind speed and humidity.
 
-## Resources to Provide
+## Resources provided
 
 - Basic project skeleton including a reactive setup.
-- Mock API data (in JSON format)
-- Pre-written failing test cases using a JavaScript testing framework like Jest.
-- Note: You may need to install additional dependencies such as "@testing-library/react" for testing React components.
+- Mock API data (in JSON format) with openapi spec in comments
+- Pre-written failing test cases using vitest.

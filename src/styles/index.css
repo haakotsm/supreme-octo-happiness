@@ -1,11 +1,79 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /* Colors */
+  --primary-blue: #007bff;
+  --secondary-blue: #4da6ff;
+  --light-blue: #b3d9ff;
+  --dark-blue: #0056b3;
+
+  --primary-gray: #6c757d;
+  --secondary-gray: #adb5bd;
+  --light-gray: #e9ecef;
+  --dark-gray: #343a40;
+
+  --primary-yellow: #ffc107;
+  --secondary-yellow: #ffd42a;
+
+  --primary-text-color: var(--dark-blue);
+  --secondary-text-color: var(--light-gray);
+  --background-color: var(--light-blue);
+  --accent-color: var(--primary-blue);
+  --header-color: var(--primary-gray);
+  --card-background-color: var(--light-gray); /* for light mode */
+
+  /* Spacing */
+  --spacing-xs: 5px;
+  --spacing-s: 10px;
+  --spacing-m: 15px;
+  --spacing-l: 20px;
+  --spacing-xl: 30px;
+
+  /* Padding */
+  --padding-xs: var(--spacing-xs);
+  --padding-s: var(--spacing-s);
+  --padding-m: var(--spacing-m);
+  --padding-l: var(--spacing-l);
+  --padding-xl: var(--spacing-xl);
+
+  /* Margin */
+  --margin-xs: var(--spacing-xs);
+  --margin-s: var(--spacing-s);
+  --margin-m: var(--spacing-m);
+  --margin-l: var(--spacing-l);
+  --margin-xl: var(--spacing-xl);
+
+  /* Gap */
+  --gap-xs: var(--spacing-xs);
+  --gap-s: var(--spacing-s);
+  --gap-m: var(--spacing-m);
+  --gap-l: var(--spacing-l);
+  --gap-xl: var(--spacing-xl);
+
+  /* Typography */
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-size-xs: 12px;
+  --font-size-s: 14px;
+  --font-size-m: 16px;
+  --font-size-l: 18px;
+  --font-size-xl: 20px;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+
+  /* Dark mode colors */
+  --dark-primary-text-color: #e9ecef;
+  --dark-secondary-text-color: #adb5bd;
+  --dark-background-color: #242424;
+  --dark-accent-color: #646cff;
+  --dark-card-background-color: #333333;
+
+  font-family: var(--font-family-sans-serif);
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: var(--font-weight-regular);
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: var(--background-color);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -13,56 +81,19 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+.dark-mode {
+  --primary-text-color: var(--dark-primary-text-color);
+  --secondary-text-color: var(--dark-secondary-text-color);
+  --background-color: var(--dark-background-color);
+  --accent-color: var(--dark-accent-color);
+  --header-color: var(--dark-blue);
+  --card-background-color: var(--dark-card-background-color);
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
+  padding: 0;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+  flex-direction: column;
+  max-width: 1280px;
 }
