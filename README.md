@@ -1,30 +1,46 @@
-# React + TypeScript + Vite
+# Weather Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This is a simple React application that displays weather information for a user-specified location. The application will retrieve data from a mock API, and developers need to implement the UI and utility functions based on the failing test suite you provide.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Resources provided
 
-## Expanding the ESLint configuration
+- Basic project skeleton including a reactive setup.
+- Failing test suite provided.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Getting Started
 
-- Configure the top-level `parserOptions` property like this:
+To get started with the application, follow these steps:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+1. Clone the repository.
+2. Install dependencies by running `npm install` or `yarn install`.
+3. Start the development server by running `npm start` or `yarn start`.
+4. Open your browser and navigate to `http://localhost:3000`.
+5. Implement the features listed in the [Features to Implement](#features-to-implement) section.
+6. Run the tests by running `npm test` or `yarn test`. All tests should go green.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Features to Implement
+
+- [ ] Location Input: Implement a text input field where the user can enter a city name.
+- [ ] Weather Display: Implement the display of current weather information:
+  - [ ] Temperature (Celsius/Fahrenheit)
+  - [ ] Weather conditions (Sunny, Cloudy, Rainy, etc.)
+  - [ ] Optional: Wind speed, humidity, and pressure readings
+- [ ] Data Fetching: Implement a mock function that simulates API calls to fetch weather data based on the user's input.
+- [ ] Responsive Design: Ensure the app is responsive and works well on both desktop and mobile views.
+
+## Test Suites
+
+- UI Tests:
+  - [ ] Test if the input field and submit button render correctly.
+  - [ ] Test if weather data displays correctly after submitting a location.
+  - [ ] Test for error handling, such as displaying a message if the location is not found.
+- Utility Function Tests:
+  - [ ] Function to parse the mock API data and extract necessary weather details.
+  - [ ] Function to convert temperature between Celsius and Fahrenheit.
+  - [ ] Optional: Function to calculate real-feel temperature based on wind speed and humidity.
+
+## Contributing
+
+Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.

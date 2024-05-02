@@ -1,8 +1,8 @@
 import { useState } from 'react'
-import { WeatherData } from '../mocks/data'
+import { WeatherData } from '../../mocks/data'
 import './App.css'
 
-function App() {
+export function App() {
   const [weatherData, setWeatherData] = useState<WeatherData>()
   function getWeatherData() {
     fetch("/api/weather", { method: "GET" })
